@@ -1,11 +1,11 @@
-const { SlashCommandBuilder } = require("@discordjs/builders");
-const { EmbedBuilder } = require("discord.js");
+const { SlashCommandBuilder } = require(`@discordjs/builders`);
+const { EmbedBuilder } = require(`discord.js`);
 
 
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("snipe")
-    .setDescription("Snipes the last deleted message from the current channel"),
+    .setDescription(`Snipes the last deleted message from the current channel`),
     async execute (interaction, client) {
 
         const msg = client.snipes.get(interaction.channel.id);
