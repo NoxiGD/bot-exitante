@@ -13,7 +13,7 @@ module.exports = {
  
   execute ( interaction ) {
    const { options } = interaction;
-   let rpts = ["esperando a que la gente diga que poner"]
+   let rpts = ["sí pablus ama el pene", "hiper gay", "demonsio???", "pablus wtf?"]
    let pregunta = interaction.options.getString("pregunta");
  
 const embed = new EmbedBuilder()
