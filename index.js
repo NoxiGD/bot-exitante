@@ -63,14 +63,15 @@ client.on("interactionCreate", async (interaction) => {
     name: 'Dash History'
     });
   });
+
   client.snipes = new Map()
-client.on(`messageDelete`, function(message, channel) {
-  client.snipes.set(message.channel.id, {
-    content: message.content,
-    author: message.author,
-    image: message.attachments.first() ? message.attachments.first().proxyURL : null
-  });
-});
+  client.on('messageDelete', function(message, channel) {
+    client.snipes.set(message.channel.id, {
+      content: message.content,
+      author: message.author,
+      image: message.attachments.first() ? message.attachments.first().proxyURL : null
+    })
+  })
   client.config = require("./config.json");
   client.events = new Collection();
   client.commands = new Collection();

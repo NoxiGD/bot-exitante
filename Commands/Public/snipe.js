@@ -25,5 +25,5 @@ module.exports = {
         if (msg.image) embed.setImage(msg.image)
         await interaction.reply({ embeds: [embed] })
 
-    },
-};
+    }
+}
