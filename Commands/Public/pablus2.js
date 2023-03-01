@@ -10,7 +10,7 @@ module.exports = {
 
         const {client, guild} = interaction;
 
-        const choice =  ["https://media.discordapp.net/attachments/1079901942303694918/1080476780797890641/IMG_20230106_195924.jpg", "https://media.discordapp.net/attachments/1079901942303694918/1080476781049561168/IMG_20230106_195839.jpg", "image.png"]
+        const choice =  ["https://media.discordapp.net/attachments/1079901942303694918/1080476780797890641/IMG_20230106_195924.jpg", "https://media.discordapp.net/attachments/1079901942303694918/1080476781049561168/IMG_20230106_195839.jpg", "https://cdn.discordapp.com/attachments/1079901942303694918/1080495828797505677/image.png", "https://cdn.discordapp.com/attachments/1079901942303694918/1080496370181472356/image.png"]
 
         const ball = Math.round((Math.random() * choice.length))
             await interaction.reply (`${choice[ball]}`).catch(err =>{
