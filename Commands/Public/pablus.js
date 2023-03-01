@@ -17,7 +17,7 @@ module.exports = {
 
         const ball = Math.round((Math.random() * choice.length))
             await interaction.reply (`${choice[ball]}
-             ⚠️ Atención: todas las capturas son falsas o sacadas de contexto, este bot no tiene el fin de burlarse ni manchar su imagen, es solo humor absurdo`).catch(err =>{
+⚠️ Atención: todas las capturas son falsas o sacadas de contexto, este bot no tiene el fin de burlarse ni manchar su imagen, es solo humor absurdo`).catch(err =>{
 
             })
   },
